@@ -287,7 +287,7 @@ class EmpList extends Component {
                             size="sm"
                             variant="outline-danger"
                              onClick={() => {
-                              if (window.confirm('Do You want to delette ?')) {
+                              if (window.confirm('Do You want to delete ?')) {
                                 
                                 return this.deleteEmp(emp.id);
                                }
