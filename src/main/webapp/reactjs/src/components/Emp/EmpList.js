@@ -286,7 +286,13 @@ class EmpList extends Component {
                           <Button
                             size="sm"
                             variant="outline-danger"
-                            onClick={() => this.deleteEmp(emp.id)}
+                             onClick={() => {
+                              if (window.confirm('Do You want to delette ?')) {
+                                
+                                return this.deleteEmp(emp.id);
+                               }
+                             
+                            }}
                           >
                             <FontAwesomeIcon icon={faTrash} />
                           </Button>
